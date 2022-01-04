@@ -1,13 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+
+:root {
+    --blue: #75B5EE;
+    --white: #ffff;
+    --vinil-green: #34526B; 
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
-
 
 html {
     font-size: 62.5%;
 }
 
+body {
+    background: var(--blue);
+    font-family: Signika;
+}
+
 .wrapper {
+    display: grid;
+    grid-template-rows: 110px 350px 180px auto ;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+background: #75B5EE;
+box-shadow:  6px 6px 15px #69a3d6,
+             -6px -6px 15px #81c7ff;
+}
+.header p {
+    font-size: 2.4rem;color: var(--white);
+}
+
+.card1 img {
+    width: 260px;
+    height: 260px;
     
+} 
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+box-shadow:  20px 20px 60px #639aca,
+             -20px -20px 60px #87d0ff;
+    
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 180px;
+}
+
+.title {
+    font-size: 3.6rem;
+    color: var(--vinil-green);
+}
+
+.subtitle {
+    font-size: 2.4rem;
+    color: var(--vinil-green);
 }
