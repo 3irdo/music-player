@@ -49,26 +49,22 @@ box-shadow:  6px 6px 15px #69a3d6,
     font-size: 2.4rem;color: var(--white);
 }
 
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card1 img {
     width: 260px;
     height: 260px;
     
 } 
-.card1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-box-shadow:  20px 20px 60px #639aca,
-             -20px -20px 60px #87d0ff;
-    
-}
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.vinil-leg {
+    position: absolute;
+    align-self: flex-end;
+        
 }
 
 .progress-bar {
@@ -80,6 +76,7 @@ box-shadow:  20px 20px 60px #639aca,
 
 .bar {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -87,6 +84,11 @@ box-shadow:  20px 20px 60px #639aca,
     height: 180px;
 }
 
+.vinil-leg {
+    position: absolute;
+    left: -17px ;
+    bottom: 126px;
+}
 .title {
     font-size: 3.6rem;
     color: var(--vinil-green);
@@ -96,3 +98,61 @@ box-shadow:  20px 20px 60px #639aca,
     font-size: 2.4rem;
     color: var(--vinil-green);
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.pause {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow:  20px 20px 60px #639aca,
+    -20px -20px 60px #87d0ff;
+}
+
+.pause span {
+    position: absolute;
+    top: calc(50% - 13px);
+    left: calc(50% - 12px);
+}  
+
+.foward {
+    display: flex;
+    position: absolute;
+    right: 15%;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    box-shadow:  20px 20px 60px #639aca,
+    -20px -20px 60px #87d0ff;
+}
+
+.foward span {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 11px);
+    
+}
+
+ .back {
+    position: absolute;
+    left: 15%;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    box-shadow:  20px 20px 60px #639aca,
+    -20px -20px 60px #87d0ff;
+}
+
+.back span {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 11px);
+
+
+
