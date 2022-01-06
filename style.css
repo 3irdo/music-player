@@ -19,10 +19,18 @@ html {
 body {
     background: var(--blue);
     font-family: Signika;
+    overflow-y: hidden;
 }
 
 .wrapper {
     display: grid;
+    margin: 10px auto;
+    max-width: 350px;
+    max-height: 780px;
+    border-radius: 15px;
+    background: #75B5EE;
+    box-shadow: 6px 6px 15px #69a3d6,
+    -6px -6px 15px #81c7ff ;
     grid-template-rows: 110px 350px 180px auto ;
     height: 100vh;
 }
@@ -55,11 +63,18 @@ box-shadow:  6px 6px 15px #69a3d6,
     justify-content: center;
 }
 
-.card1 img {
+.spin {
     width: 260px;
     height: 260px;
-    
+    -webkit-transition: linear;
 } 
+
+.spin:hover {
+    transform: rotate(360deg);
+    transition: 10s ease-in-out;
+    animation-iteration-count: infinite;
+   
+}
 
 .vinil-leg {
     position: absolute;
@@ -94,6 +109,16 @@ box-shadow:  6px 6px 15px #69a3d6,
     color: var(--vinil-green);
 }
 
+.line {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: var(--vinil-green);
+    margin: 0 auto;
+    top: calc(30% - 1px);
+
+}
+
 .subtitle {
     font-size: 2.4rem;
     color: var(--vinil-green);
@@ -106,6 +131,14 @@ footer {
     padding-bottom: 30px;
 }
 
+.play-container {
+    display: flex;
+    width: 300px;
+    height: 180px;
+    align-items:center;
+    justify-content: center;
+    padding-bottom: 80px;
+}  
 .pause {
     position: relative;
     width: 80px;
@@ -113,6 +146,7 @@ footer {
     border-radius: 50%;
     box-shadow:  20px 20px 60px #639aca,
     -20px -20px 60px #87d0ff;
+    
 }
 
 .pause span {
@@ -122,9 +156,8 @@ footer {
 }  
 
 .foward {
-    display: flex;
-    position: absolute;
-    right: 15%;
+    position: relative;
+    left: 10%;
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -133,15 +166,15 @@ footer {
 }
 
 .foward span {
-    position: absolute;
+    position: relative;
     top: calc(50% - 8px);
     left: calc(50% - 11px);
     
 }
 
  .back {
-    position: absolute;
-    left: 15%;
+    position: relative;
+    right: 10%;
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -150,9 +183,15 @@ footer {
 }
 
 .back span {
-    position: absolute;
+    position: relative;
     top: calc(50% - 8px);
     left: calc(50% - 11px);
+}
 
+.grow {
+    transition: all .2s ease-in-out;
+}
 
-
+.grow:hover {
+    transform: scale(1.1);
+}
