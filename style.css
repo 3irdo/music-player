@@ -79,7 +79,9 @@ box-shadow:  6px 6px 15px #69a3d6,
 .vinil-leg {
     position: absolute;
     align-self: flex-end;
-        
+    position: absolute;
+    left: -17px ;
+    bottom: 126px;
 }
 
 .progress-bar {
@@ -98,12 +100,7 @@ box-shadow:  6px 6px 15px #69a3d6,
     width: 320px;
     height: 180px;
 }
-
-.vinil-leg {
-    position: absolute;
-    left: -17px ;
-    bottom: 126px;
-}
+   
 .title {
     font-size: 3.6rem;
     color: var(--vinil-green);
