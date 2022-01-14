@@ -19,7 +19,7 @@ html {
 body {
     background: var(--blue);
     font-family: Signika;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 .wrapper {
@@ -195,31 +195,36 @@ footer {
 /*MENU-SECTION-STYLES*/
 
 .menu-header {
+    width: 290px;
     display: flex;
     height: 70px;
-    justify-content: center;
-    align-items: flex-end;
+    justify-items: flex-start;
+    align-items: center;
     font-size: 2.6rem;
+    margin: 0 auto;
+    padding-left: 15px;
 }
 
-.menu-title {
-
-}
 
 .list-container {
-    width: 300px;
-    height: 800px;
-    align-items: start;
-    margin: 40px auto;
-    align-content: space-between;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 320px;
+    min-height: 500px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 80px 0 0 20px;
+}   
 
 .music-box {
     display: flex;
-    height: 30px;
+    width: 290px;
+    min-height: 40px;
     margin: 0px 0 15px 0;
     padding: 0 20px 0 20px;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
@@ -242,4 +247,27 @@ footer {
 .artist {
     font-size: 1.4rem;
     color: var(--vinil-green);
+}
+
+.playing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    width: 290px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+}
+
+.playing__song {
+    font-size: 2.5rem;
+}
+
+.playing__artist {
+    font-size: 2rem;
+    color: var(--vinil-green)
+}
+.menu-footer {
+    min-height: 30px;
+    background-color:aliceblue
 }
