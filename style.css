@@ -22,7 +22,7 @@ body {
     /*overflow-y: hidden;*/
 }
 
-.wrapper {
+    .wrapper {
     display: grid;
     margin: 10px auto;
     max-width: 350px;
@@ -195,16 +195,44 @@ footer {
 /*MENU-SECTION-STYLES*/
 
 .menu-header {
-    width: 290px;
     display: flex;
+    position: relative;
+    justify-content: center;
+    width: 290px;
     height: 70px;
-    justify-items: flex-start;
     align-items: center;
     font-size: 2.6rem;
-    margin: 0 auto;
-    padding-left: 15px;
+    margin: 10px auto;
 }
 
+.header__icons {
+    display: flex;
+    position:absolute;
+    width: 290px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__line {
+    position: absolute;
+    background-color: var(--vinil-green);
+    width: 260px;
+    height: 2px;
+    border-radius: 2px;
+    bottom: calc(5% - 10px);
+    left: calc(15% - 30px);
+}
+
+.list {
+    margin-top: 30px;
+}
+
+.menu-title {
+    display: flex;
+    flex-direction: column;  
+}
 
 .list-container {
     display: flex;
@@ -216,7 +244,7 @@ footer {
     min-height: 500px;
     max-height: 600px;
     margin: 0 auto;
-    padding: 80px 0 0 20px;
+    padding-left:  20px;
 }   
 
 .music-box {
@@ -227,15 +255,10 @@ footer {
     padding: 0 20px 0 20px;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
     border-radius: 5px;
-    background-image: url(/assets/img/thumbnail.png);
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: left;
-    /* background: #75B5EE;
-    box-shadow:  5px 5px 7px #6094c3,
-                -5px -5px 7px #8ad6ff; */
 }
 
 .music-box:hover {
@@ -255,16 +278,14 @@ footer {
 
 .playing {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
     min-height: 40px;
     width: 290px;
     padding: 0 20px 0 20px;
     margin: 0 auto;
-    border-radius: 5px;
-    background: #75B5EE;
-    box-shadow:  5px 5px 7px #6094c3,
-                -5px -5px 7px #8ad6ff;
+    padding-bottom: 10px;
+    
 }
 
 .playing__song {
@@ -275,10 +296,29 @@ footer {
     font-size: 2rem;
     color: var(--vinil-green)
 }
+
+.playing__line {
+    position: absolute;
+    bottom: calc(20% - 10px);
+    left: calc(15% - 30px);
+    background-color: var(--vinil-green);
+    width: 260px;
+    height: 2px;
+    border-radius: 2px;
+    
+}
+
 .menu-footer {
-    min-height: 30px;
-    background-color:aliceblue;
-    width: 300px;
-    margin: 0 auto;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu-footer__icons {
+    display: flex;
+    width: 290px;
+    justify-content: space-between;
+    align-items: center;
+   
+
 }
